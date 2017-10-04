@@ -1,0 +1,20 @@
+source https://www.nuget.org/api/v2
+storage: none
+clitool dotnet-mono
+clitool Microsoft.DotNet.Watcher.Tools
+nuget Expecto >= 5.0.0
+nuget FSharp.Core = 4.2.3
+
+nuget Microsoft.AspNetCore.Server.Kestrel
+nuget FSharp.Configuration  0.6.4
+nuget FSharp.Interop.Dynamic
+nuget FSharp.Management
+nuget Marten ~> 1.5.2
+nuget canopy 1.2.3
+nuget Selenium.WebDriver 3.4.0
+
+nuget Nancy
+
+group Build
+    source https://www.nuget.org/api/v2
+    nuget FAKE
